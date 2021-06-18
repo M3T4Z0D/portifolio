@@ -1,3 +1,45 @@
-ul{
+:root{
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --bg-primary: #fafafa;
+    --bg-secondary: #d6d6d6;
+    --font-primary: #202020;
+    --font-secondary: #dadada;
+    --nav-size: 60px;
+    --border-radius: 8px;
+    --speed: 500ms;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+header{    
+    justify-content: space-between;  
+}
+
+.navbar{
+    background-color: var(--bg-secondary);
+    height: var(--nav-size);
+}
+
+.nav-list{
+    margin: 0px;
     list-style: none;
+    display: flex;scroll-behavior: ;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: calc(var(--nav-size) * 0.8);
+    width: calc(var(--nav-size) * 0.8);
 }
